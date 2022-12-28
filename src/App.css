@@ -1,0 +1,30 @@
+:root {
+  --background-color: #0e1212;
+  --main-color: #682ae9;
+  --bg-rgb: 14,18,18;
+}
+
+.App {  
+  font-family: 'Roboto Mono', monospace;
+}
+
+.App-header {
+  background: linear-gradient(180deg,var(--background-color) 3rem,rgba(var(--bg-rgb),0));
+  min-height: 8rem;
+}
+
+.header-text {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.header-text:hover {
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.item-right-align {
+  text-align: end;
+}

@@ -6,6 +6,9 @@ import reportWebVitals from './reportWebVitals';
 import { Provider } from 'react-redux';
 import store from './store';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import Am from './screens/am/am';
+import About from './screens/about/about';
+import Email from './screens/email/email';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -15,6 +18,20 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App/>,
+    children: [
+      {
+        path: "am",
+        element: <Am/>
+      },
+      {
+        path: "about",
+        element: <About/>
+      },
+      {
+        path: "email",
+        element: <Email/>
+      },
+    ]
   },
 ]);
 

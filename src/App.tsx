@@ -1,7 +1,7 @@
 import React from "react";
+import { Link, Outlet } from "react-router-dom";
 import "./App.css";
 import useWindowDimensions from "./global-hook/dimension";
-import { mainColor } from "./theme/colors";
 
 function App() {
   const { width } = useWindowDimensions();
@@ -9,11 +9,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div style={{marginRight: width > 600 ? (width - 600) * 0.2 : 0}} className="item-right-align">
-          <text className="header-text">.am()</text>
-          <text className="header-text">.about()</text>
-          <text className="header-text">.email()</text>
+          <Link to="am" className="header-text">.am()</Link>
+          <Link to="about" className="header-text">.about()</Link>
+          <Link to="email" className="header-text">.email()</Link>
         </div>
       </header>
+      <div id="a">
+        <Outlet/>
+      </div>
     </div>
   );
 }

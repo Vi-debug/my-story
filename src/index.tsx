@@ -9,6 +9,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Am from './screens/am/am';
 import About from './screens/about/about';
 import Email from './screens/email/email';
+import { FontSizeProvider } from './global-hook/context/font-size';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -20,7 +21,7 @@ const router = createBrowserRouter([
     element: <App/>,
     children: [
       {
-        path: "am",
+        path: "",
         element: <Am/>
       },
       {
@@ -38,7 +39,9 @@ const router = createBrowserRouter([
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-      <RouterProvider router={router} />
+      <FontSizeProvider>
+        <RouterProvider router={router} />
+      </FontSizeProvider>
     </Provider>
   </React.StrictMode>
 );

@@ -1,9 +1,61 @@
+@import url(../../App.css);
+
 .am-title {
-    color: white;
-    margin-top: 5px;
+    color: var(--main-color);
     font-size: 1.2rem;
 }
 
 .flex-1 {
     flex: 1;
+}
+.container {
+    margin-top: 350px;
+    height: fit-content;
+}
+.heading {
+    font-weight: bold;
+}
+.main-color {
+    color: var(--main-color);
+}
+.white-color {
+    color: white;
+}
+.gray {
+    color: var(--gray);
+}
+.title {
+    font-weight: 500;
+}
+.column {
+    flex-direction: column;
+    margin-right: 30px;
+    margin-top: 55px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.dot {
+    width: 11px;
+    height: 11px;
+    background-color: var(--main-color);
+    border-radius: 100%;
+    display: block;
+}
+.line {
+    border-left: 1px solid var(--main-color);
+    height: 100%;
+    margin-left: 5px;
+}
+.space {
+    height: 500px;
+}
+.word-break {
+    display: flex;
+    word-break: break-word;
+}
+.margin-bottom14 {
+    margin-bottom: 14px;
 }

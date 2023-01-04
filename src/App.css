@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;500;700&display=swap');
 :root {
   --background-color: #0e1212;
   --main-color: #682ae9;
   --bg-rgb: 14,18,18;
+  --gray: gray;
 }
 
 .App {  
@@ -11,27 +13,36 @@
 .App-header {
   background: linear-gradient(180deg,var(--background-color) 3rem,rgba(var(--bg-rgb),0));
   min-height: 8rem;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: -1;
+  z-index: 1;
 }
 
 .header-text {
-  color: white;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 400;
   margin-right: 10px;
   text-decoration: none;
 }
 
 .header-text:hover {
-  color: var(--main-color);
-  text-decoration: none;
+  color: var(--main-color) !important;
+  text-decoration: none; 
 }
 
 .item-right-align {
   text-align: end;
   margin-top: 5px;
+}
+.header-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title {
+  color: var(--main-color);
+  font-weight: 400;
+  font-size: 1.2rem;
 }

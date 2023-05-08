@@ -8,25 +8,27 @@ export interface IWorkHistory {
   children: JSX.Element[] | JSX.Element;
 }
 
-
 const WorkHistory = (props: IWorkHistory) => {
   const { heading1, title2, body1 } = useContext(FontSizeContext);
   const { at, from, to } = props;
 
   return (
     <div className="column word-break">
-      <span style={{ fontSize: heading1 }} className="heading white-color margin-bottom14">
-        work(at:
-        <span style={{ fontSize: heading1 }} className="heading main-color">
-          {at}
-        </span>
-        ,from:
+      <span
+        style={{ fontSize: heading1 }}
+        className="heading white-color margin-bottom14"
+      >
+        work(from:
         <span style={{ fontSize: heading1 }} className="heading main-color">
           {from}
         </span>
-        {to ? 'to:' : null} 
+        {to ? ",to:" : null}
         <span style={{ fontSize: heading1 }} className="heading main-color">
           {to}
+        </span>
+        ,at:
+        <span style={{ fontSize: heading1 }} className="heading main-color">
+          {at}
         </span>
         )
       </span>

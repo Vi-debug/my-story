@@ -4,8 +4,11 @@ import { FontSizeContext } from "../../global-hook/context/font-size";
 import useWindowDimensions from "../../global-hook/dimension";
 import "./am.css";
 import BasicInfo from "./component/BasicInfo";
+import Future from "./component/Future";
 import Introduce from "./component/Introduce";
+import Personal from "./component/Personal";
 import ShowMyCV from "./component/ShowMyCV";
+import Skill from "./component/Skill";
 import WorkHistory from "./component/WorkTechJA";
 
 function Am() {
@@ -17,6 +20,9 @@ function Am() {
       <span style={{ fontSize: body1 }} className="title gray">
         return "Android tutor"
       </span>
+      <span style={{ fontSize: body1, marginTop: 20 }} className="title gray">
+        What I did: Teaching hundreds of students how to code
+      </span>
     </WorkHistory>
   );
 
@@ -27,7 +33,7 @@ function Am() {
           return "Flutter devloper - Fresher"
         </span>
         <span style={{ fontSize: body1 }} className="title gray">
-          A booking application for tourist visit HaLongBay of Vietnam
+          Project: A booking application for tourist visit HaLongBay of Vietnam
         </span>
       </WorkHistory>
     );
@@ -68,6 +74,12 @@ function Am() {
         {workAtFptSoftware()}
         <div className="space"></div>
         {introduce()}
+        <div className="space"></div>
+        <Skill />
+        <div className="space"></div>
+        <Future />
+        <div className="space"></div>
+        <Personal />
       </div>
     </div>
   );

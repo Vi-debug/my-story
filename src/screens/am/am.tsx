@@ -21,7 +21,12 @@ function Am() {
         return "Android tutor"
       </span>
       <span style={{ fontSize: body1, marginTop: 20 }} className="title gray">
-        What I did: Teaching hundreds of students how to code
+        What I did: Teaching hundreds of students how to code from zero
+        knowledge
+      </span>
+      <span style={{ fontSize: body1, marginTop: 20 }} className="title gray">
+        What I learned: Educational and teaching skills, Guiding freshers and
+        the confidence to stand in front of dozens of people
       </span>
     </WorkHistory>
   );
@@ -29,11 +34,17 @@ function Am() {
   function workAtCooftech() {
     return (
       <WorkHistory at="Cooftech" from="Jan-2020" to="May-2020">
-        <span style={{ fontSize: body1 }} className="title gray margin-bottom14">
+        <span style={{ fontSize: body1 }} className="title gray">
           return "Flutter devloper - Fresher"
         </span>
-        <span style={{ fontSize: body1 }} className="title gray">
+        <span style={{ fontSize: body1, marginTop: 20 }} className="title gray">
+          Customer: TuanChau Group
+        </span>
+        <span style={{ fontSize: body1, marginTop: 20 }} className="title gray">
           Project: A booking application for tourist visit HaLongBay of Vietnam
+        </span>
+        <span style={{ fontSize: body1, marginTop: 20 }} className="title gray">
+          What I learned: Building commercial application with Dart and Flutter
         </span>
       </WorkHistory>
     );
@@ -41,16 +52,38 @@ function Am() {
 
   function workAtFptSoftware() {
     return (
-      <WorkHistory at="FPT Software" from="Jan-2021">
-        <span style={{ fontSize: body1 }} className="title gray margin-bottom14">
-          return "Mobile teamlead - Currently"
+      <WorkHistory at="FPT Software" from="Jan-2021" to="Now">
+        <span
+          style={{ fontSize: body1 }}
+          className="title gray margin-bottom14"
+        >
+          return "Mobile teamlead (React Native and Flutter)"
+        </span>
+        <span
+          style={{ fontSize: body1 }}
+          className="title gray margin-bottom14"
+        >
+          What I did: Managing a front-end team, reviewing and maintaining
+          codebase, setting up technologies, and building a mobile application
+        </span>
+        <span
+          style={{ fontSize: body1 }}
+          className="title gray margin-bottom14"
+        >
+          What I achived:
+        </span>
+        <span
+          style={{ fontSize: body1, lineHeight: 1.7 }}
+          className="title gray margin-bottom14"
+        >
+          Promoted to Dev03 level
+          <br />
+          Excellent Project (ePTW - 2022)
+          <br />
+          Platium staff (Top 5% - 2022)
         </span>
       </WorkHistory>
     );
-  }
-
-  function introduce() {
-    return (<Introduce/>)
   }
 
   return (
@@ -73,13 +106,14 @@ function Am() {
         <div className="space"></div>
         {workAtFptSoftware()}
         <div className="space"></div>
-        {introduce()}
+        <Introduce />
         <div className="space"></div>
         <Skill />
         <div className="space"></div>
         <Future />
         <div className="space"></div>
         <Personal />
+        <div className="space"></div>
       </div>
     </div>
   );

@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { FontSizeContext } from "../../../global-hook/context/font-size";
 
 const BasicInfo = () => {
-    
   const { heading1, title2, body1 } = useContext(FontSizeContext);
 
   return (
@@ -17,7 +16,7 @@ const BasicInfo = () => {
       </div>
       <div>
         <p style={{ fontSize: body1 }} className="title main-color">
-          Viet Bui Anh
+          the first name of Viet Bui Anh,
         </p>
       </div>
       <div>

@@ -57,6 +57,7 @@ function App() {
       <div className="outlet">
         <Outlet />
       </div>
+      <div className="App-footer" />
     </div>
   );
 }
